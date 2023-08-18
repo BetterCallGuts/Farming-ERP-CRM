@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/cows.css' %}">
+
+{% endblock link %}
+
+
+{% block header %}
+  
+{% endblock header %}
+{% block content %}
+<main>
+    <div class="cows-preview">
+        <div class="main-area">
+
+
+            {% include "compnents/navbarapp.html" %}
+
+            <div class="new-view">
+                <div class="nav">
+                    <a href="{% url 'apps:index' %}" class="back-btn"><  Back</button>
+                    <a href="{% url 'apps:app'  'logs' 'new' 1 %}">
+                        <div class="icon">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </a>
+                </div>
+                <h1>{% block titleview %}
+                
+                {% endblock titleview %}</h1>
+
+
+                {% block view %}
+                
+                {% endblock view %}
+
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

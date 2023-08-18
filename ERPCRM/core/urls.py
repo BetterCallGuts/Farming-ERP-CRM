@@ -5,5 +5,6 @@ app_name = "apps"
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("cowsapp/", views.CowApp, name='cow')
+
+    path("<str:app>/<str:page>/<int:stat>/", views.CowApp, name='app'),
 ]

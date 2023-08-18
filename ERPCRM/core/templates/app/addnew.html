@@ -1,0 +1,58 @@
+{% extends "app/baseapp.html" %}
+
+
+{% block title %}
+  Add bakara
+{% endblock title %}
+{% block titleview %}
+Add bakara
+  
+{% endblock titleview %}
+
+
+{% block view %}
+<form action="">
+    <div class="feild">
+        <div class="title">
+            Name
+        </div>
+        <div class="input">
+            <input type="text" placeholder="name">
+        </div>
+    </div>
+    <div class="feild">
+        <div class="title">
+            Moudle name
+        </div>
+        <div class="input">
+            <textarea type="text" placeholder="name"></textarea>
+        </div>
+    </div>
+    <div class="feild">
+        <div class="title">
+            Agree
+        </div>
+        <div class="input">
+            <input type="checkbox">
+        </div>
+    </div>
+    <div class="feild">
+        <div class="title">
+            Country
+        </div>
+        <div class="input">
+            <select name="select-list" id="select-list">
+                <option value="1">Egypt</option>
+                <option value="2">UK</option>
+                <option value="3">USA</option>
+                <option value="4">EURO</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-btn">
+        <button class="submit-btn">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</form>
+{% endblock view %}

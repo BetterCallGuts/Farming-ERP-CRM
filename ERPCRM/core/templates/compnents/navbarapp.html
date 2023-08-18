@@ -1,0 +1,25 @@
+            
+            <div class="left-nav">
+                <h1>Happy Farm</h1>
+                <nav>
+                    <h3 class="list">{{ main.f}}</h3>
+                    <ul>
+                        <li  {% if slec == 1 %} class="active" {% endif %} ><a href="{% url 'apps:app'  app  "new"  1 %}">List View</a></li>
+                        <li {% if slec == 2 %} class="active" {% endif %} ><a href="{% url 'apps:app'   app  "new"  2 %}">Add New</a></li>
+                        <li {% if slec == 3 %} class="active" {% endif %}  ><a href="{% url 'apps:app'  app  "statictics"  3 %}">Statistics View</a></li>
+                    </ul>
+                    <h3 class="list">{{ main.s}}</h3>
+                    <ul>
+                        <li {% if slec == 4 %} class="active" {% endif %} ><a href="{% url 'apps:app'  app "new"  4 %}">List View</a></li>
+                        <li {% if slec == 5 %} class="active" {% endif %} ><a href="{% url 'apps:app'  app "new"  5 %}">Add New</a></li>
+                        <li {% if slec == 6 %} class="active" {% endif %} ><a href="{% url 'apps:app'  app "new"  6 %}">Statistics View</a></li>
+                    </ul>   
+                    <h3 class="list">{{ main.t}}</h3>
+                    <ul>
+                        <li {% if slec == 7 %} class="active" {% endif %} ><a href="{% url 'apps:app' app "new"  7 %}">List View</a></li>
+                        <li {% if slec == 8 %} class="active" {% endif %} ><a href="{% url 'apps:app' app "new"  8 %}">Add New</a></li>
+                        <li {% if slec == 9 %} class="active" {% endif %} ><a href="{% url 'apps:app' app "new"  9 %}">Statistics View</a></li>
+                    </ul>
+                </nav>
+            </div>
+

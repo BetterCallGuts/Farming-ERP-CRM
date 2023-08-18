@@ -22,6 +22,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    
+    'crequest', # Need access to the request object in places where request
+
+    'crispy_forms', # For the reports forms,
+    'crispy_bootstrap4',
+
+    'reversion', # needed only when you use the admin app
+    'tabular_permissions', # better a permission widget , Optional
+
+    'erp_framework',
+    "erp_framework.admin.jazzmin_integration", # if you want to use jazzmin theme, otherwise remove this line
+    'erp_framework.admin',
+    'erp_framework.reporting',
+    'slick_reporting',
+
+    'jazzmin', # optional
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,8 +55,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'crequest.middleware.CrequestMiddleware',
 ]
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 ROOT_URLCONF = 'ERPCRM.urls'
 
 TEMPLATES = [
@@ -110,7 +128,11 @@ USE_TZ = True
 STATIC_URL = 'static/';
 STATICFILES_DIRS = [os.path.join(BASE_DIR,"../templates/src")];
 STATIC_ROOT=os.path.join(BASE_DIR ,"rootstatic" )
-
+ERP_FRAMEWORK_SETTING_DEFAULT = {
+    "site_name": "bakartk",
+    "site_header": "bakartk ",
+    "index_title": "bakartk",
+}
 
 
 # Default primary key field type

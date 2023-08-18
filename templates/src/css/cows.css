@@ -45,8 +45,12 @@ body {
                         display: flex;
                         flex-direction: column;
                         gap: 4px;
-                        font-weight: 500;
+                        font-weight: 400;
 
+                        & li.active {
+                            font-weight: bold;
+                            padding-left: 5px;
+                        }
                         & li:hover {
                             color: rgb(87, 87, 87);
                         }

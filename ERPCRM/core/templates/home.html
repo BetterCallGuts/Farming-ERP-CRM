@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock link %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<main>
+	<div class="icons-container">
+		<a href="{% url 'apps:cow' %}" class="btn-cows">
+			<div class="icon">
+				<img src="{% static 'media/icons/cow-icon.png' %}">
+			</div>
+			Cows
+		</a>
+		<a href="#" class="btn-milk">
+			<div class="icon">
+				<img src="{% static 'media/icons/milk-icon.png' %}">
+			</div>
+			Milk
+		</a>
+		<a href="#" class="btn-empolyees">
+			<div class="icon">
+				<img src="{% static 'media/icons/empolyees-icon.png' %}">
+			</div>
+			Empolyees
+		</a>
+		<a href="#" class="btn-food">
+			<div class="icon">
+				<img src="{% static 'media/icons/food-icon.png' %}">
+			</div>
+			Food
+		</a>
+		<a href="#" class="btn-reports">
+			<div class="icon">
+				<img src="{% static 'media/icons/report-icon.png' %}">
+			</div>
+			Reports
+		</a>
+	</div>
+</main>
+
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

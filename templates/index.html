@@ -3,58 +3,70 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="src/css/home.css">
+		<link rel="stylesheet" href="src/css/cows.css">
 		<!-- font-awesome -->
 		<link rel="stylesheet" href="src/lib/fontawesome-free-6.4.0-web/css/all.min.css">
 		<script defer src="src/lib/fontawesome-free-6.4.0-web/js/all.min.js"></script>
 		<title>Farm ERP</title>
 	</head>
 	<body>
-		<header class="navbar">
-			<div class="logo">
-				Happy Farm
-			</div>
-			<ul>
-				<li>
-					<a href="">
-						<i class="fa-regular fa-bell"></i>
-					</a>
-				</li>
-			</ul>
-		</header>
 		<main>
-			<div class="icons-container">
-				<a href="#" class="btn-cows">
-					<div class="icon">
-						<img src="./src/media/icons/cow-icon.png">
-					</div>
-					Cows
-				</a>
-				<a href="#" class="btn-milk">
-					<div class="icon">
-						<img src="./src/media/icons/milk-icon.png">
-					</div>
-					Milk
-				</a>
-				<a href="#" class="btn-empolyees">
-					<div class="icon">
-						<img src="./src/media/icons/empolyees-icon.png">
-					</div>
-					Empolyees
-				</a>
-				<a href="#" class="btn-food">
-					<div class="icon">
-						<img src="./src/media/icons/food-icon.png">
-					</div>
-					Food
-				</a>
-				<a href="#" class="btn-reports">
-					<div class="icon">
-						<img src="./src/media/icons/report-icon.png">
-					</div>
-					Reports
-				</a>
-			</div>
+            <div class="cows-preview">
+                <div class="main-area">
+                    <div class="left-nav">
+                        <h1>Happy Farm</h1>
+                        <nav>
+                            <h3 class="list">Cows</h3>
+                            <ul>
+                                <li><a href="/list_view">List View</a></li>
+                                <li><a href="new.html">Add New</a></li>
+                                <li><a href="/statistics_view">Statistics View</a></li>
+                            </ul>
+                            <h3 class="list">Mother Cow</h3>
+                            <ul>
+                                <li><a href="/list_view">List View</a></li>
+                                <li><a href="new.html">Add New</a></li>
+                                <li><a href="/statistics_view">Statistics View</a></li>
+                            </ul>
+                            <h3 class="list">Jung Cows</h3>
+                            <ul>
+                                <li><a href="/list_view">List View</a></li>
+                                <li><a href="new.html">Add New</a></li>
+                                <li><a href="/statistics_view">Statistics View</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="stat-view">
+                        <div class="nav">
+                            <a href="" class="back-btn">< Back</button>
+                            <a href="">
+                                <div class="icon">
+                                    <i class="fa-regular fa-bell"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <h1>Statistics View </h1>
+                        <ul>
+                            <li class="field">
+                                <span class="title">Total Cows</span>
+                                <span class="value">89</span>
+                            </li>
+                            <li class="field">
+                                <span class="title">Jung Cows</span>
+                                <span class="value">56</span>
+                            </li>
+                            <li class="field">
+                                <span class="title">Old Cows</span>
+                                <span class="value">23</span>
+                            </li>
+                            <li class="field">
+                                <span class="title">Total Cows</span>
+                                <span class="value">169</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 		</main>
 	</body>
 </html>

@@ -1,30 +1,4 @@
-/* reset */
-
-*,
-::after,
-::before {
-
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
-}
-
-a {
-
-	color: inherit;
-	text-decoration: none;
-
-}
-
-/* variables */
-
-:root {
-
-	/* paddings */
-	--navbar-padding-x: 100px;
-
-}
+@import url(./config/autoload.css);
 
 /* body */
 
@@ -35,31 +9,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 
-}
-
-/* navbar */
-
-header.navbar {
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 80px;
-	gap: 10px;
-	padding: 0 var(--navbar-padding-x);
-
-	.logo {
-
-		font-size: 1.4rem;
-		font-weight: bold;
-
-	}
-	& ul {
-
-		font-size: 1.2rem;
-		list-style-type: none;
-
-	}
 }
 
 /* main */
@@ -85,7 +34,12 @@ main {
 			align-items: center;
 			gap: 10px;
 			font-weight: bold;
-		
+			transition: scale .1s;
+
+			&:hover {
+				scale: 1.2;
+			}
+
 			& > .icon {
 
 				display: flex;

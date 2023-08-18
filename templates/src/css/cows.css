@@ -1,0 +1,186 @@
+@import url(./config/autoload.css);
+
+
+body {
+    background-color: rgba(211, 211, 211, 0.8);
+    background-size: cover;
+
+    & main {
+
+        display: flex;
+    	height: 100vh;
+        width: 100%;
+
+        & .cows-preview {
+        
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+
+            & .main-area {
+                height: 100%;
+                display: flex;
+
+                .left-nav {
+                    width: 300px;
+                    height: 100%;
+                    padding: 20px 20px;
+                    border-right: 1px solid gray;
+
+                    & h1 {
+                        font-size: 2rem;
+                        text-align: center;
+                        margin: 20px 0;
+                    }
+
+                    & .list {
+                        font-weight: bold;
+                        padding: 5px 0;
+                        margin: 20px 0;
+                        border-bottom: 1px solid black;
+                    }
+
+                    & ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                        font-weight: 500;
+
+                        & li:hover {
+                            color: rgb(87, 87, 87);
+                        }
+                    }
+                }
+
+                & .stat-view {
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 20px 80px;
+                    background-image: linear-gradient(180deg, transparent, rgba(125, 125, 125, 0.1) 0%);
+
+                    & .nav {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        gap: 20px;
+                        margin: 10px 0;
+
+                        & .back-btn {
+                            border: 2px solid rgb(84, 84, 84);
+                            outline: none;
+                            padding: 5px 10px;
+                            background-color: lightblue;
+                            border-radius: 5px;
+                        }
+                    }
+                    & > h1 {
+                        font-size: 1.5rem;
+                        margin-bottom: 20px;
+                        border-bottom: 2px solid gray;
+                    }
+                    & > ul > li {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid gray;
+                        padding: 4px 5px;
+                    
+                        &:nth-child(even) {
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+                & .new-view {
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 20px 80px;
+                    background-image: linear-gradient(180deg, transparent, rgba(125, 125, 125, 0.1) 0%);
+                    position: relative;
+
+                    & > h1 {
+                        font-size: 1.5rem;
+                        margin-bottom: 20px;
+                        border-bottom: 2px solid gray;
+                    }
+
+                    & .nav {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        gap: 20px;
+                        margin: 10px 0;
+
+                        & .back-btn {
+                            border: none;
+                            outline: none;
+                            padding: 10px 20px;
+                            background-color: darkcyan;
+                            color: white;
+                        }
+                    }
+                    
+                    & form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        width: 100%;
+
+                        & .feild {
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+                            padding-bottom: 10px;
+                            max-width: 500px;
+                            margin: 0 auto;
+
+                            & > * {
+                                width: 50%;
+                            }
+
+                            & .title::after {
+                                content: ":";
+                            }
+
+                            & .input {
+                                width: 100%;
+
+                                & > * {
+                                    padding: 0 5px;
+                                    width: 90%;
+                                    resize: none;
+                                }
+                            }
+                        }
+
+                        & .form-btn {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            width: 100%;
+                            gap: 20px;
+                            padding: 0 20px 0 0;
+                            position: absolute;
+                            bottom: 20px;
+                            right: 10px;
+
+                            & > * {
+                                padding: 15px 30px;
+                                cursor: pointer;
+                                border: none;
+                            }
+                            & .submit-btn {
+                                background-color: darkcyan;
+                                color: white;
+                                font-weight: bold;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
